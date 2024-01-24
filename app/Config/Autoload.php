@@ -47,6 +47,9 @@ class Autoload extends AutoloadConfig {
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config' => APPPATH . 'Config',
         'Myth\Auth' => APPPATH . 'ThirdParty/myth-auth/src',
+        'PHPSQLParser' => APPPATH . 'ThirdParty/php-sql-parser/src/PHPSQLParser', // <-- namespace for php-sql-parser
+        'Hermawan\DataTables' => APPPATH . 'ThirdParty/codeigniter4-datatables/src', // <-- namespace for this library
+        'PHPMailer\PHPMailer' => APPPATH . 'ThirdParty/PHPMailer-6.9.1/src', // <-- namespace for this library
     ];
 
     /**
