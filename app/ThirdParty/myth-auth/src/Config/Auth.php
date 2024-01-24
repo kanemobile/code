@@ -89,7 +89,7 @@ class Auth extends BaseConfig
      *
      * @var string
      */
-    public $viewLayout = 'Myth\Auth\Views\layout';
+    public $viewLayout = 'Myth\Auth\Views\customlayout';
 
     /**
      * --------------------------------------------------------------------
