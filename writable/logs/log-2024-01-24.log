@@ -57,3 +57,6 @@ INFO - 2024-01-24 12:44:40 --> Session: Class initialized using 'CodeIgniter\Ses
 =======
 INFO - 2024-01-24 12:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 >>>>>>> 70c40e9 (Rien à changer)
+INFO - 2024-01-24 16:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 16:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 16:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
