@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2024-01-24 11:46:14 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
 in SYSTEMPATH\Filters\Filters.php on line 352.
  1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
@@ -53,3 +54,6 @@ INFO - 2024-01-24 12:13:30 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-24 12:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 12:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 12:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2024-01-24 12:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 70c40e9 (Rien à changer)
