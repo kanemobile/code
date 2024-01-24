@@ -9,7 +9,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<div class="row p-5">
+<div class="row mb-3">
 
     <div class="offset-1 col-10">
 
