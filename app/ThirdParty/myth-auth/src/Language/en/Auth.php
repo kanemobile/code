@@ -72,14 +72,14 @@ return [
     'tooManyRequests' => 'Too many requests. Please wait {0, number} seconds.',
 
     // Login views
-    'home'                      => 'Home',
+    'home'                      => 'Accueil',
     'current'                   => 'Current',
     'forgotPassword'            => 'Forgot Your Password?',
     'enterEmailForInstructions' => 'No problem! Enter your email below and we will send instructions to reset your password.',
     'email'                     => 'Email',
     'emailAddress'              => 'Email Address',
     'sendInstructions'          => 'Send Instructions',
-    'loginTitle'                => 'Login',
+    'loginTitle'                => 'log',
     'loginAction'               => 'Login',
     'rememberMe'                => 'Remember me',
     'needAnAccount'             => 'Need an account?',

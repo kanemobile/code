@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2024-01-24 11:46:14 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
 in SYSTEMPATH\Filters\Filters.php on line 352.
  1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
@@ -53,6 +54,7 @@ INFO - 2024-01-24 12:13:30 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-24 12:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 12:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 12:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
 INFO - 2024-01-24 15:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 CRITICAL - 2024-01-24 15:29:58 --> Error: Class "App\Models\Menu" not found
 in APPPATH\Controllers\MenuController.php on line 14.
@@ -84,3 +86,11 @@ INFO - 2024-01-24 16:05:02 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-24 16:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 16:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-24 16:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+=======
+INFO - 2024-01-24 12:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 70c40e9 (Rien à changer)
+INFO - 2024-01-24 16:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 16:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-24 16:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> a56bdb23a3428a10d066c7ca0d4b28c60a399163

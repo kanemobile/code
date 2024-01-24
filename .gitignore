@@ -1,3 +1,4 @@
 /tests
-/writable
+/writable/*
 /nbproject
+/.idea/*
