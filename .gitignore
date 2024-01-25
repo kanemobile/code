@@ -1,4 +1,6 @@
 /tests
-/writable/*
+/writable/cache/*
+/writable/debugbar/*
+/writable/session/*
 /nbproject
 /.idea/*
