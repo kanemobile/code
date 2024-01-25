@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->group('menu', ['filter' => 'login'], function ($routes) {
+$routes->group('menu', [], function ($routes) {
     $routes->get('', 'MenuController::index');
     $routes->get('ajouter', 'MenuController::ajouter');
     $routes->post('store', 'MenuController::store');
