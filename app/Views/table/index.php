@@ -15,7 +15,7 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h3 class="card-title">TABLES THIANGAYE fall test plusieurs branch depot</h3>
+                <h3 class="card-title">TABLES THIANGAYE fall </h3>
                 <a href="<?= site_url('table/ajouter') ?>" class="btn btn-outline-light float-right">Ajouter</a>
             </div>
             <div class="card-body">
