@@ -24,7 +24,7 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>NOM +++ ajout</th>
+                            <th>NOM</th>
                             <th>URL</th>
                             <th>Action</th>
                         </tr>
