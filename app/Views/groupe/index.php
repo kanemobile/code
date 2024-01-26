@@ -9,14 +9,14 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<div class="row py-3">
+<div class="row p-5">
 
     <div class="offset-1 col-10">
 
         <div class="card shadow mb-4">
-            <div class="card-header">
-                <h3 class="card-title">MENUS</h3>
-                <a href="<?= site_url('menu/ajouter') ?>" class="btn btn-outline-light float-right">Ajouter</a>
+            <div class="card-header py-3">
+                <h3 class="card-title">GROUPES</h3>
+                <a href="<?= site_url('groupe/ajouter') ?>" class="btn btn-outline-light float-right">Ajouter</a>
             </div>
             <div class="card-body">
 
@@ -25,7 +25,7 @@
                         <tr>
                             <th>ID</th>
                             <th>NOM</th>
-                            <th>PARENT</th>
+                            <th>Description</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -69,7 +69,7 @@
             processing: true,
             serverSide: true,
             ajax: {
-                url: '<?= url_to('getmenus'); ?>',
+                url: '<?= url_to('getgroupes'); ?>',
                 method: 'POST',
                 data: {[csrfToken]: csrfHash}
             },

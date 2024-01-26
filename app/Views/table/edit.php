@@ -9,11 +9,11 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<div class="row p-5">
+<div class="row py-3">
     <!-- left column -->
     <div class="offset-1 col-10">
         <!-- general form elements -->
-        <div class="card card-primary">
+        <div class="card card">
             <div class="card-header">
                 <h3 class="card-title">EDITION LIEN</h3>
             </div>

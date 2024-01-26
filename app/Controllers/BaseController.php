@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use App\Models\Menu;
 
 /**
  * Class BaseController
@@ -35,13 +36,15 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['url', 'form', 'menu'];
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
      * The creation of dynamic property is deprecated in PHP 8.2.
      */
     // protected $session;
+
+    protected $menu;
 
     /**
      * @return void
@@ -50,6 +53,10 @@ abstract class BaseController extends Controller
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
+
+        $this->menu = new Menu();
+        session()->set('menus', $this->menu->findAll());
+        //session()->set('key', $key);
 
         // Preload any models, libraries, etc, here.
 

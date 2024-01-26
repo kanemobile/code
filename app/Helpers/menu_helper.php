@@ -5,7 +5,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 
-function getChildren($id) {
+function getChildren($id = 0) {
 
     $db = db_connect();
 
@@ -29,7 +29,7 @@ function getTables($id) {
 
     $found = $builder
                     ->select('tables.*')
-                    ->join('menus', 'tables.menus_id = menus.id')
+                    ->join('menus', 'tables.menu_id = menus.id')
                     ->where('menus.id', $id)
                     ->get()->getResult();
 

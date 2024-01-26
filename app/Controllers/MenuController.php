@@ -63,4 +63,21 @@ class MenuController extends BaseController {
             return redirect('menu')->with('success', 'Données enregistrées avec succès');
         }
     }
+
+    public function edit()
+    {
+        $table = $this->table->find($id);
+
+        $menus = $this->menu->findAll();
+
+        $tableau = array();
+
+        $tableau[$table->menu_id] = $this->menu->find($table->menu_id)->nom;
+
+        foreach ($menus as $value) {
+            $tableau[$value->id] = $value->nom;
+        }
+
+        return view('menu/edit', compact('table', 'tableau'));
+    }
 }

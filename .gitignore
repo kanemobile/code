@@ -1,7 +1,8 @@
-/tests
+tests/
 /writable/cache/*
 /writable/debugbar/*
 /writable/session/*
 /writable/logs/*
-/nbproject
-/.idea/*
+/nbproject/
+/.idea/
+.env

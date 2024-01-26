@@ -13,7 +13,7 @@ class Table extends Model {
     protected $returnType = 'object';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
-    protected $allowedFields = ['menus_id', 'nom', 'url', 'icon'];
+    protected $allowedFields = ['menu_id', 'nom', 'url', 'icon'];
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat = 'datetime';

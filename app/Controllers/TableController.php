@@ -54,7 +54,7 @@ class TableController extends BaseController {
             return redirect()->back()->withInput();
         } else {
             $data = [
-                "menus_id" => $this->request->getPost("menu"),
+                "menu_id" => $this->request->getPost("menu"),
                 "nom" => $this->request->getPost("nom"),
                 'url' => $this->request->getPost('url'),
                 'icon' => $this->request->getPost('icon'),
@@ -71,7 +71,7 @@ class TableController extends BaseController {
 
         $tableau = array();
 
-        $tableau[$table->menus_id] = $this->menu->find($table->menus_id)->nom;
+        $tableau[$table->menu_id] = $this->menu->find($table->menu_id)->nom;
 
         foreach ($menus as $value) {
             $tableau[$value->id] = $value->nom;

@@ -9,13 +9,13 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<div class="row mb-3">
+<div class="row py-3">
 
     <div class="offset-1 col-10">
 
         <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h3 class="card-title">TABLES THIANGAYE fall </h3>
+            <div class="card-header">
+                <h3 class="card-title">TABLES</h3>
                 <a href="<?= site_url('table/ajouter') ?>" class="btn btn-outline-light float-right">Ajouter</a>
             </div>
             <div class="card-body">
