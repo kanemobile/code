@@ -64,20 +64,45 @@ class MenuController extends BaseController {
         }
     }
 
-    public function edit()
+    public function edit($id)
     {
-        $table = $this->table->find($id);
+        $menu = $this->menu->find($id);
 
-        $menus = $this->menu->findAll();
+        $parents = $this->menu->findAll();
 
         $tableau = array();
 
-        $tableau[$table->menu_id] = $this->menu->find($table->menu_id)->nom;
+        $tableau[0] = 'No Parent';
 
-        foreach ($menus as $value) {
+        foreach ($parents as $value) {
             $tableau[$value->id] = $value->nom;
         }
 
-        return view('menu/edit', compact('table', 'tableau'));
+        return view('menu/edit', compact('menu', 'tableau'));
     }
+    public function update() {
+
+        $rules = [
+            'id' => 'max_length[19]|is_natural_no_zero',
+            'nom' => 'required|max_length[255]|is_unique[menus.nom,id,{id}]',
+        ];
+
+        if (!$this->validate($rules)) {
+
+            return redirect()->back()->withInput();
+        } else {
+
+
+            $this->menu->update(
+                $this->request->getPost('id'),
+                [
+                    "nom" => $this->request->getPost("nom"),
+                    'parent_id' => $this->request->getPost('parent'),
+                    'icon' => $this->request->getPost('icon'),
+                ]
+            );
+            return redirect('menu')->with('success', 'Données enregistrées avec succès');
+        }
+    }
+
 }

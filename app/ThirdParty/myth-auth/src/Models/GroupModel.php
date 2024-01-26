@@ -18,8 +18,8 @@ class GroupModel extends Model
         'description',
     ];
     protected $validationRules = [
-        'name'        => 'required|max_length[255]|is_unique[auth_groups.name,name,{name}]',
-        'description' => 'max_length[255]',
+        /*'name'        => 'required|max_length[255]|is_unique[auth_groups.name,name,{name}]',
+        'description' => 'max_length[255]',*/
     ];
 
     /**

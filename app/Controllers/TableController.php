@@ -97,7 +97,7 @@ class TableController extends BaseController {
             $this->table->update(
                     $this->request->getPost('id'),
                     [
-                        'menus_id' => $this->request->getPost('menu'),
+                        'menu_id' => $this->request->getPost('menu'),
                         'nom' => $this->request->getPost('nom'),
                         'url' => $this->request->getPost('url'),
                         'icon' => $this->request->getPost('icon'),

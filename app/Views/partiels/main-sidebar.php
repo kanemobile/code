@@ -58,7 +58,7 @@
 
                                     <?php if (!empty(getTables($child->id))): ?>
 
-                                        <li class="nav-item menu-open <?php if (isset($menu_open) and $menu_open): ?> menu-open <?php endif ?>">
+                                        <li class="nav-item <?php if (isset($menu_open) and $menu_open): ?> menu-open <?php endif ?>">
                                             <a href="#" class="nav-link <?php if (isset($menu_open) and $menu_open): ?> active <?php endif ?>">
                                                 <i class="fas <?= $child->icon ?> nav-icon"></i>
                                                 <p>
@@ -71,7 +71,7 @@
                                                     <li class="nav-item">
                                                         <a href="<?= site_url($table->url) ?>" class="nav-link <?php if (uri_string() == $table->url): ?> active <?php endif ?>">
                                                             <i class="fas <?= $table->icon ?> nav-icon"></i>
-                                                            <p><?= $table->url ?></p>
+                                                            <p><?= $table->nom ?></p>
                                                         </a>
                                                     </li>
                                                 <?php endforeach; ?>

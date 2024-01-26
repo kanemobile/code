@@ -37,4 +37,24 @@ class GroupMenu extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getGroupMenu($id) {
+        $found = $this->builder()
+            ->select('groupmenus.*')
+            ->join('auth_groups', 'groupmenus.group_id = auth_groups.id')
+            ->where('auth_groups.id', $id)
+            ->get()->getResult();
+
+        return $found;
+    }
+
+    public function getMenus($groupe) {
+        $found = $this->builder()
+            ->select('menus.*')
+            ->join('menus', 'groupmenus.menu_id = menus.id')
+            ->where('groupmenus.group_id', $groupe)
+            ->get()->getResult();
+
+        return $found;
+    }
 }

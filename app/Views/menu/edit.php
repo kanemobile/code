@@ -27,30 +27,25 @@
                         <?= form_hidden('id', $menu->id) ?>
 
                         <div class="form-group row">
-                            <label for="menu" class="col-sm-3 col-form-label">MENU</label>
+                            <label for="nom" class="col-sm-3 col-form-label">NOM</label>
                             <div class="col-sm-9">
-                                <?= form_dropdown('menu', $tableau, '', ['class' => 'form-control']); ?>
+                                <input type="text" name="nom" value="<?= is_null($menu) ? old("nom"): $menu->nom ?>" class="form-control" id="nom" placeholder="NOM DU MENU" />
+                                <span class="text-danger"> <?= validation_show_error("nom") ?></span>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="nom" class="col-sm-3 col-form-label">NOM URL</label>
+                            <label for="typeoffre" class="col-sm-3 col-form-label">PARENT</label>
                             <div class="col-sm-9">
-                                <input type="text" name="nom" value="<?= $table->nom ?>" class="form-control" id="nom">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="url" class="col-sm-3 col-form-label">URL</label>
-                            <div class="col-sm-9">
-                                <input type="text" name="url" value="<?= $table->url ?>" class="form-control" id="url">
+                                <?= form_dropdown('parent', $tableau, '', ['class' => 'form-control']); ?>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="icon" class="col-sm-3 col-form-label">ICON</label>
                             <div class="col-sm-9">
-                                <input type="text" name="icon" value="<?= $table->icon ?>" class="form-control" id="icon">
+                                <input type="text" name="icon" value="<?= $menu->icon ?>" class="form-control" id="icon" placeholder="Ex : fa-users">
+                                <span class="text-danger"> <?= validation_show_error("icon") ?></span>
                             </div>
                         </div>
 
