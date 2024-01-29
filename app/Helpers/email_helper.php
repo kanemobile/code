@@ -24,8 +24,8 @@ if (!function_exists('sendEmail')) {
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-        $mail->Username = 'mail.sidel@uadb.edu.sn';
-        $mail->Password = 'merciuadb';
+        $mail->Username = '';
+        $mail->Password = '';
         // Sender &amp; Recipient
         $mail->From = 'mail.sidel@uadb.edu.sn';
         $mail->FromName = 'CRI';
